@@ -5,7 +5,7 @@
         v-for="link in linksList"
         :key="link"
         :to="link.link"
-        class="col text-center"
+        class="col text-center link-text-to"
         ><strong>{{ link.title }}</strong></q-route-tab
       >
     </q-tabs>
