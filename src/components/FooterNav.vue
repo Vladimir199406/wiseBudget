@@ -1,12 +1,12 @@
 <template>
   <q-footer>
-    <q-tabs class="row bg-blue-grey-6">
+    <q-tabs class="row blueContainer">
       <q-route-tab
         v-for="link in linksList"
         :key="link"
         :to="link.link"
-        class="col text-center link-text-to"
-        ><strong>{{ link.title }}</strong></q-route-tab
+        class="col text-center"
+        ><strong class="standart-fat">{{ link.title }}</strong></q-route-tab
       >
     </q-tabs>
   </q-footer>
