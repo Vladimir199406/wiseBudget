@@ -1,8 +1,8 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout>
     <header-nav />
 
-    <q-page-container class="bg-blue-grey-2">
+    <q-page-container class="layoutContainer">
       <router-view />
     </q-page-container>
 

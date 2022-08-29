@@ -17,6 +17,11 @@ const routes = [
   },
 
   {
+    path: "/auth",
+    component: () => import("layouts/AuthLayout.vue"),
+  },
+
+  {
     path: "/:catchAll(.*)*",
     component: () => import("pages/ErrorNotFound.vue"),
   },

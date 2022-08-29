@@ -1,4 +1,16 @@
-.link-text-to {
+//fonts
+.standart-fat {
+  color: $standartWhite;
   font-size: 16px;
+  font-weight: 700;
   line-height: 30px;
+}
+
+//containers
+.layoutContainer {
+  background-color: $backgroundStandart;
+}
+
+.blueContainer {
+  background-color: $backgroundBlueContainer;
 }
