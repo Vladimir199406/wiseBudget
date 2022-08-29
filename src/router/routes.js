@@ -1,19 +1,25 @@
-
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+      { path: "", component: () => import("src/pages/PageBudget.vue") },
+      { path: "/cards", component: () => import("src/pages/PageCards.vue") },
+      {
+        path: "/settings",
+        component: () => import("src/pages/PageSettings.vue"),
+      },
+      {
+        path: "/account",
+        component: () => import("src/pages/PageAccount.vue"),
+      },
+    ],
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
-]
+    path: "/:catchAll(.*)*",
+    component: () => import("pages/ErrorNotFound.vue"),
+  },
+];
 
-export default routes
+export default routes;
